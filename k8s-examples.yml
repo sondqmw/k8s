@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: random-ngau-nghien
+  labels:
+    app: ngau-nghien
+spec:
+  containers:
+    - name: ngau-container
+      image: alpine
+      command: ["sh", "-c", "while true; do echo 'Tôi là Pod ngầu nghễnh'; sleep 5; done"]
